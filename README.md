@@ -16,6 +16,23 @@ claim. It assumes no prior make.fun experience, only an agent you already use.
 >
 > Or enter the code `f90fyryd` — the same code works as `?ref=f90fyryd` on any make.fun page.
 
+## Contents
+
+- [The short version](#the-short-version)
+- [What you need](#what-you-need)
+- [How a bounty runs](#how-a-bounty-runs)
+- [1. Create your account](#1-create-your-account)
+- [2. Pick a bounty](#2-pick-a-bounty)
+- [3. Get the kit](#3-get-the-kit)
+- [4. Build your entry](#4-build-your-entry)
+- [5. Bundle, check, submit](#5-bundle-check-submit)
+- [6. Read the verdict, fix, resubmit](#6-read-the-verdict-fix-resubmit)
+- [7. Claim your reward](#7-claim-your-reward)
+- [Rather not type any of this?](#rather-not-type-any-of-this)
+- [Your own referral link](#your-own-referral-link)
+- [Mistakes that get entries rejected](#mistakes-that-get-entries-rejected)
+- [Questions](#questions)
+
 ## The short version
 
 1. Create a make.fun account and link GitHub plus a Solana wallet.
@@ -138,7 +155,10 @@ can measure an entry before it ever leaves your machine.
    but it counts for less than code your agent authored in the session.
 6. **Write the README the bounty asks for.** Repository bounties specify a README
    with live make.fun badges for your repository; fill in the template from the
-   requirements and commit it with everything else.
+   requirements and commit it with everything else. Mind the exact name: the file
+   must be `README.md` at the repository root — a lowercase `readme.md` is not
+   shown by GitHub, and a second README inside `.github/` would take its place
+   and is refused.
 
 A shortcut worth taking: have your agent read
 [make.fun/skill.md](https://make.fun/skill.md) first. It is the complete entry loop
@@ -227,6 +247,25 @@ only genuine new accounts that participate count.
 
 If this walkthrough got you started, signing up through
 [my link](https://make.fun/r/f90fyryd) (code `f90fyryd`) is a welcome thank-you.
+
+## Mistakes that get entries rejected
+
+Every rejection names its cause, and most causes are on this short list:
+
+- **Building in an old session.** The transcripts must start after the bounty
+  opened. Open a fresh session for each bounty, even if yesterday's chat is warm.
+- **Submitting the starter unchanged.** The kit's starter passes the shape checks
+  but none of its lines are yours, so the authorship check fails it. Rewrite it in
+  your agent's session — a draft, then a revision.
+- **Forgetting the licence.** No OSI-approved licence file at the submitted
+  commit, no entry. Add it in the first commit, not the last.
+- **Leaving template placeholders in the badges.** A badge URL that still says
+  `{owner}` points nowhere and fails the README check. Fill in your real owner
+  and repository names, then open the rendered page and look at the badges.
+- **Checking in secrets.** An API key committed anywhere in the repository's
+  history refuses the entry. Keys belong in the kit's secrets store, never in a file.
+- **Signing and then dawdling.** An entry signature is good for ten minutes.
+  Bundle first, check second, and submit while the signature is fresh.
 
 ## Questions
 
